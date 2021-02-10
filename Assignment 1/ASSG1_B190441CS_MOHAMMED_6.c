@@ -132,18 +132,7 @@ void displayLevelsum(node *root)
 }
 int main()
 {
-    /*
-    int a[]={18,20,24,30,36,50,51};
-    node *root=NULL;
-    insert(&root, createNode(10));
-    insert(&root, createNode(15));
-    insert(&root, createNode(5));
-
-    node *root2=NULL;
-    specialInsert(a,0,6,&root2);
-    //printf("%s\n",getParanthesis(root2));
-    displayLevelsum(root2);
-*/
+   
 
     int n;
     scanf("%d",&n);
@@ -155,20 +144,5 @@ int main()
     specialInsert(a,0,n-1,&root);
     printf("%s\n",getParanthesis(root));
     displayLevelsum(root);    
-    //preorder(root2);
-/*
-    queue q;
-    node *t=createNode(1);
-    q.front=t;
-    q.back=t;
-    //enqueue(&q, createNode(1));
-    enqueue(&q, createNode(2));
-    enqueue(&q, NULL);
-    printf("Hey");
-    enqueue(&q, createNode(3));
-    printf("%d ",dequeue(&q)->data);
-    //printf("%d ",dequeue(&q)->data);
-    //dequeue(&q);
-    //printf("%d ",dequeue(&q)->data); */
     return 0;
 }
